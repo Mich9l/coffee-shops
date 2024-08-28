@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilitie
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 500 16px  "Urbanist", sans-serif ;
+    color:#FFFFFF ;
+    background-color: #14110E;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s ;
+}
+
+button{
+    display: block;
+    border: none;
+    color: inherit;
+    font:inherit;
+    transition: 0.5s;
+    background-color: transparent;
+    cursor: pointer;
+}
+ul li ,ol li{
+    list-style: none;
+}
+
+.container{
+    max-width:  1320px;
+    margin: 0 auto;
+}
+#header-coffee__section{
+    background-color: #1C1814 ;
+    padding: 32px  0 ;
+
+}
+.header-internal, .header-nav__list, .header-wrap__button , .header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-nav__list{
+    column-gap: 48px;
+    font: 400 18px "Inter", sans-serif;
+
+}
+.header-nav__link-gold{
+    color: #C99E71;
+    font-weight: bold;
+    cursor: default;
+}
+.header-nav__link :hover{
+    color:#C99E71;
+}
+
+.header-nav__logo{
+    width: max(72px, 15%);
+    height: max(60px,15%);
+}
+
+#section-coffee__first{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("../assets/Rectangle 12.png")   ;
+    padding-top: 147px;
+
+
+}
+
+
+.section-coffee__first-logo{
+    padding-bottom: 32px;
+}
+
+.section-coffee_first-submit{
+    font: 400 72px "Righteous" ;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    max-width: 529px;
+}
+.section-coffee_first-text{
+    font:  500  20px   "Urbanist";
+    color: #FFFFFFCC ;
+    text-transform: capitalize;
+    line-height: 36px;
+    max-width: 511px;
+}
+.section-coffee__first-btn__position {
+    margin-top: 64px;
+}
+
+.button-test__coffee{
+    font: 700 18px "Inter";
+    color: #FFFFFF;
+    line-height: 21px;
+    padding: 24px 40px;
+    background-color: #C99E71;
+    transition: 0.5s ease-in-out;
+}
+.button-test__coffee:hover{
+    background-color: bisque;
+
+}
+.section-coffee__first-right{
+    margin-right: 375px ;
+}
+.section-coffee__video-play{
+    background-image: url("../assets/Ellipse (1).png") ;
+}
+.section-coffee__video-text{
+    font: 400 16px "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+#section-coffee__best-sealer{
+    padding : 140px  375px;
+    background-color: #14110E;
+}
+.section-coffee__best-sealer{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:36px;
+}
+.section-coffee__container-subtitle{
+    font: 400 24px "Righteous";
+    color: #FFFFFF;
+    padding-left: 12px;
+}
+.section-coffee__gold-emblem{
+    font: 400 24px "Righteous";
+    color:#C99E71 ;
+}
+.section-coffee__container{
+    padding-bottom: 24px;
+}
+#section-coffee__create-new__story{
+    background-color: #14110E;
+    padding-top: 140px;
+
+}
+.button-test__coffee-btn{
+    padding-top:15px ;
+}
+.section-coffee__create-new__story-container{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 32px;
+}
+
+.section-coffee__create-new__story-text{
+    background-color: #1C1814;
+    padding: 56px;
+}
+.section-coffee__create-new__story-logo{
+    font: 600 18px "Urbanist",sans-serif;
+    color: #C99E71;
+    padding-left: 56px;
+}
+.section-coffee__create-new__story-subtitle{
+    font: 400 48px "Righteous",sans-serif;
+    color: inherit;
+    padding-left: 56px;
+}
+.section-coffee__create-new__story-text{
+    font:500 16px "Urbanist", sans-serif;
+    color: #FFFFFFCC;
+    text-transform: capitalize;
+    padding-top: 36px;
+
+}
