@@ -13,3 +13,6 @@ function toggleDivVisibility(){
 }
 
 btnImage.addEventListener('click',toggleDivVisibility)
+
+
+
