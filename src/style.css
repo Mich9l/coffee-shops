@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     font: 500 16px  "Urbanist", sans-serif ;
@@ -47,6 +48,7 @@ ul li ,ol li{
 
 }
 
+
 .header-nav__list{
     column-gap: 48px;
     font: 400 18px "Inter", sans-serif;
@@ -58,24 +60,31 @@ ul li ,ol li{
     cursor: default;
 }
 .header-nav__link :hover{
-    color:#C99E71;
+    color:bisque;
+    cursor: pointer;
 }
 
 .header-nav__logo{
     width: max(72px, 15%);
     height: max(60px,15%);
 }
-
-#section-coffee__first{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-image: url("../assets/Rectangle 12.png")   ;
-    padding-top: 147px;
-
-
+.header-nav{
+    flex-grow: 1;
+    margin-left: 253px;
 }
 
+#section-coffee__first{
+    background: url("../assets/Rectangle 12.png") 50% 0%/cover no-repeat;
+
+}
+.section-coffee__first-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 147px  0 166px ;
+}
+.section-coffee__first-info{
+    max-width: 529px;
+}
 
 .section-coffee__first-logo{
     padding-bottom: 32px;
@@ -85,14 +94,14 @@ ul li ,ol li{
     font: 400 72px "Righteous" ;
     text-transform: capitalize;
     color: #FFFFFF;
-    max-width: 529px;
 }
 .section-coffee_first-text{
-    font:  500  20px   "Urbanist";
+    font-size: 20px;
     color: #FFFFFFCC ;
     text-transform: capitalize;
     line-height: 36px;
     max-width: 511px;
+    margin: 32px 0 64px;
 }
 .section-coffee__first-btn__position {
     margin-top: 64px;
@@ -108,10 +117,29 @@ ul li ,ol li{
 }
 .button-test__coffee:hover{
     background-color: bisque;
-
+    color: #000000;
 }
-.section-coffee__first-right{
-    margin-right: 375px ;
+
+.play-video{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    font: 400 16px "Inter", sans-serif;
+    color: #FFFFFF;
+    height: 109px;
+}
+.play-video::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    background: url("../assets/play.png" ) 50%/16px no-repeat;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 .section-coffee__video-play{
     background-image: url("../assets/Ellipse (1).png") ;
@@ -144,27 +172,43 @@ ul li ,ol li{
     padding-bottom: 24px;
 }
 #section-coffee__create-new__story{
-    background-color: #14110E;
     padding-top: 140px;
 
 }
-.button-test__coffee-btn{
-    padding-top:15px ;
-}
-.section-coffee__create-new__story-container{
+.section-coffee__create-new__story-wrap{
     display: grid;
+    grid-template-columns: repeat(2,1fr) 2fr;
     grid-template-rows: repeat(2,1fr);
-    grid-gap: 32px;
+    gap: 32px;
+    align-items: stretch;
 }
+.section-coffee__create-new__story-item:first-child{
+    grid-column: 1/2;
+    grid-row:1/2;
 
+}
+.section-coffee__create-new__story-item:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.section-coffee__create-new__story-item:last-child{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
 .section-coffee__create-new__story-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #1C1814;
-    padding: 56px;
+    padding: 0 56px;
 }
 .section-coffee__create-new__story-logo{
     font: 600 18px "Urbanist",sans-serif;
     color: #C99E71;
     padding-left: 56px;
+    grid-column: 3/4;
+    grid-row: 1/3;
 }
 .section-coffee__create-new__story-subtitle{
     font: 400 48px "Righteous",sans-serif;
@@ -176,5 +220,92 @@ ul li ,ol li{
     color: #FFFFFFCC;
     text-transform: capitalize;
     padding-top: 36px;
+}
 
+#header-coffee__section-all__products-salary{
+    padding-top: 140px;
+}
+.box-title-header__section-products-salary{
+  padding-bottom: 56px;
+}
+.subtitle-header__section-products-salary{
+    font: 600 18px "Urbanist",sans-serif;
+    color: #C99E71;
+    text-align: center;
+}
+.title-header__section-products-salary{
+    padding-top: 12px;
+    font: 400 48px "Righteous",sans-serif;
+    color: inherit;
+    text-align: center;
+}
+
+
+.coffee-salary-section__wrap{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 84px;
+
+
+
+}
+.coffee-salary-section__product{
+
+    max-width: 366px;
+    background-color: #121315;
+    padding: 48px 56px 48px  ;
+}
+.title-coffee__gred{
+    font: 400 24px "Righteous";
+    color: inherit;
+    text-transform: capitalize;
+
+}
+.coffee-gred__btn{
+    color: inherit;
+    background-color: #C99E71;
+
+}
+.coffee-gred__btn{
+    position: relative;
+    display: block;
+    font-weight: 600;
+    padding:13px 20px 13px 56px ;
+
+}
+.coffee-gred__btn::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 18px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../assets/buy-btn.png") no-repeat;
+    transition: 1.2s ease-in-out;
+}
+.coffee-gred__btn:hover{
+    background-color: bisque;
+    color:#000000;
+}
+#coffee-salary-section__wrap-hide{
+    display: block;
+}
+
+#btn-hide{
+
+    margin: 56px  56px ;
+}
+.coffee-salary-stars{
+    font: 500 16px 'Urbanist' ,sans-serif;
+    color:#C99E71;
+    align-items: center;
+    padding-left: 41px;
+}
+.coffee-salary__price{
+    font: 600 18px "Urbanist";
+    color: inherit;
+}
+.coffee-salary__price-gold{
+    color:#C99E71 ;
 }
