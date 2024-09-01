@@ -289,7 +289,7 @@ ul li ,ol li{
     color:#000000;
 }
 #coffee-salary-section__wrap-hide{
-    display: block;
+    display: none;
 }
 
 #btn-hide{
@@ -308,4 +308,9 @@ ul li ,ol li{
 }
 .coffee-salary__price-gold{
     color:#C99E71 ;
+}
+.button-test__coffee-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
